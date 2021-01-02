@@ -1,5 +1,5 @@
 /**
- * Convert date control to <input type="text"/>
+ * Convert date control to <input type=text>
  *
  * @version 1.0.0
  */

@@ -1,4 +1,4 @@
-# Display the date input field with `<input type=text>` by Custom Elements.
+# Convert date control to <input type=text> by Custom Elements.
 
 [![npm version](https://badge.fury.io/js/%40saekitominaga%2Fcustomelements-input-date-totext.svg)](https://badge.fury.io/js/%40saekitominaga%2Fcustomelements-input-date-totext)
 

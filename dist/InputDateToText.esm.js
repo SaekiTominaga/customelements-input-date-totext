@@ -13,7 +13,7 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
 };
 var _noexistMessage, _min, _minMessage, _max, _maxMessage, _formSubmitEventListener;
 /**
- * Convert date control to <input type="text"/>
+ * Convert date control to <input type=text>
  *
  * @version 1.0.0
  */
