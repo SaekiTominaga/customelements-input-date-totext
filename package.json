@@ -1,0 +1,46 @@
+{
+	"name": "@saekitominaga/customelements-input-date-totext",
+	"version": "1.0.1",
+	"description": "Display the date input field with `<input type=text>`.",
+	"type": "module",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^4.10.0",
+		"@typescript-eslint/parser": "^4.10.0",
+		"brotlin": "^1.1.0",
+		"cpy-cli": "^3.1.1",
+		"eslint": "^7.16.0",
+		"eslint-config-prettier": "^7.1.0",
+		"eslint-plugin-jsdoc": "^30.7.9",
+		"npm-run-all": "^4.1.5",
+		"onchange": "^7.1.0",
+		"terser": "^5.5.1",
+		"typescript": "^4.1.3"
+	},
+	"main": "dist/InputDateToText.esm.js",
+	"types": "dist/InputDateToText.esm.d.ts",
+	"scripts": {
+		"_ts-watch:tsc": "tsc -w",
+		"_ts-watch:compress": "onchange -f add -f change -v dist/InputDateToText.esm.js -- brotlin compress dist/InputDateToText.esm.js -m 1",
+		"_ts-watch:minify": "onchange -f add -f change -v dist/InputDateToText.esm.js -- terser dist/InputDateToText.esm.js -o dist/InputDateToText.min.esm.js -c ecma=2020 --mangle --ecma 2020 --module --source-map base=dist,filename=InputDateToText.esm.js,includeSources",
+		"_ts-watch:compress-minify": "onchange -f add -f change -v dist/InputDateToText.min.esm.js -- brotlin compress dist/InputDateToText.min.esm.js -m 1",
+		"_ts-watch:dts-minify": "onchange -f add -f change -v dist/InputDateToText.esm.d.ts -- cpy dist/InputDateToText.esm.d.ts dist --rename=InputDateToText.min.esm.d.ts",
+		"ts-watch": "run-p _ts-watch:*"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SaekiTominaga/customelements-input-date-totext.git"
+	},
+	"keywords": [
+		"web-components",
+		"custom-elements"
+	],
+	"author": "Saeki Tominaga",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/SaekiTominaga/customelements-input-date-totext/issues"
+	},
+	"homepage": "https://github.com/SaekiTominaga/customelements-input-date-totext#readme",
+	"publishConfig": {
+		"access": "public"
+	}
+}
