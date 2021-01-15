@@ -39,4 +39,4 @@ export default class InputDateToText extends HTMLInputElement {
      */
     private _clearMessage;
 }
-//# sourceMappingURL=InputDateToText.esm.d.ts.map
+//# sourceMappingURL=InputDateToText.d.ts.map
