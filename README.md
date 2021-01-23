@@ -15,7 +15,7 @@ Converts `<input type=date>` in the HTML source code to `<input type=text>`. In 
 
 ## Examples
 
-```
+```HTML
 <input type="date" is="x-date-to-text"
   min="2000-01-01"
   max="2020-12-31"
